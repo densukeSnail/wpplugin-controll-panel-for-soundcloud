@@ -1,0 +1,35 @@
+# Copyright (C) 2018 WordPress
+# This file is distributed under the same license as the WordPress package.
+msgid ""
+msgstr ""
+"Project-Id-Version: MyProject v.1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-13 09:48+0900\n"
+"PO-Revision-Date: 2018-06-13 09:48+0900\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: densuke <notgeek@dn-voice.info>\n"
+"Language-Team: densuke <notgeek@dn-voice.info>\n"
+"Language: ja\n"
+
+msgid "Control panel for SoundCloud"
+msgstr "SoundCloud再生パネル"
+
+msgid "setting page"
+msgstr "設定画面"
+
+msgid "Control panel position"
+msgstr "再生パネルの配置"
+
+msgid "bottom"
+msgstr "画面下"
+
+msgid "upper"
+msgstr "画面上"
+
+msgid "left"
+msgstr "画面左"
+
+msgid "right"
+msgstr "画面右"

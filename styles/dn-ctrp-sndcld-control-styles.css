@@ -1,0 +1,206 @@
+/* 再生パネル */
+#dn_ctrp_sndcld_CtrPanel{
+    display: flex;
+    position:fixed;
+    align-items:center;
+    z-index:9999;
+    width:355px;
+    height:45px;
+    background-color:#7886e4c7;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    font-size:14px;
+}
+.dn_ctrp_sndcld_cls_bottom{
+    bottom:0px;
+    left:calc(50vw - 177px);
+}
+.dn_ctrp_sndcld_cls_upper{
+    top:0px;
+    left:calc(50vw - 177px);
+}
+.dn_ctrp_sndcld_cls_left{
+    left:0px;
+    top:calc(50vh - 177px);
+}
+.dn_ctrp_sndcld_cls_right{
+    right:0px;
+    top:calc(50vh - 177px);
+}
+#dn_ctrp_sndcld_CtrPanel.dn_ctrp_sndcld_cls_left,  #dn_ctrp_sndcld_CtrPanel.dn_ctrp_sndcld_cls_right{
+    flex-direction: column;
+    align-items: center;
+    width: 45px;
+    height: 355px;
+}
+
+#dn_ctrp_sndcld_CtrPanel, #dn_ctrp_sndcld_CtrPanel *{
+    box-sizing:border-box;
+}
+
+/* 再生ボタン */
+#dn_ctrp_sndcld_playbutton{
+    display:block;
+    position:relative;
+    width: 26px;
+    height: 26px;
+    cursor:pointer;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    background: #ff5000;
+    margin: 0 10px;
+}
+#dn_ctrp_sndcld_playbutton.play:before{
+    /* 再生ボタンの停止の四角を描く */
+    display: block;
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 7px;
+    width: 12px;
+    height: 12px;
+    margin-top: -5px;
+    background-color: #fff;
+}
+#dn_ctrp_sndcld_playbutton.stop:before{
+    /* 再生ボタンの三角を描く */
+    display: block;
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 10px;
+    width: 0;
+    height: 0;
+    margin-top: -5px;
+    border: 9px solid transparent;
+    border-left: 8px solid #fff;
+}
+.dn_ctrp_sndcld_cls_left #dn_ctrp_sndcld_playbutton, .dn_ctrp_sndcld_cls_right #dn_ctrp_sndcld_playbutton{
+    margin:10px 0;
+}
+
+
+/* prev , next ボタンここから */
+#dn_ctrp_sndcld_prevbutton, #dn_ctrp_sndcld_nextbutton {
+    width: 26px;
+    height: 26px;
+    background-color: #ff5000;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+#dn_ctrp_sndcld_prevbutton:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-right: 8px solid #fff;
+    top: 5px;
+    right: 15px;
+}
+#dn_ctrp_sndcld_prevbutton:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-right: 8px solid #fff;
+    top: 5px;
+    right: 6px;
+}
+
+#dn_ctrp_sndcld_nextbutton:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-left: 8px solid #fff;
+    top: 5px;
+    left: 6px;
+}
+#dn_ctrp_sndcld_nextbutton:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-left: 8px solid #fff;
+    top: 5px;
+    left: 15px;
+}
+
+.dn_ctrp_sndcld_cls_left #dn_ctrp_sndcld_prevbutton, .dn_ctrp_sndcld_cls_right #dn_ctrp_sndcld_prevbutton,
+.dn_ctrp_sndcld_cls_left #dn_ctrp_sndcld_nextbutton, .dn_ctrp_sndcld_cls_right #dn_ctrp_sndcld_nextbutton{
+    margin:10px 0;
+}
+/* prev , next ボタンここまで */
+
+
+#dn_ctrp_sndcld_hidebutton{
+    /* 消すボタン */
+    width: 20px;
+    font-size: 15px;
+    height: 20px;
+    text-align: center;
+    padding: 3px;
+    align-self: flex-start;
+    background-color: #d4d4d4;
+    line-height: 1em;
+    border-radius: 5px;
+    margin: 2px 0 0 20px;
+    cursor: pointer;
+}
+
+#dn_ctrp_sndcld_artwork{
+    /* アートワーク表示部 */
+    width:45px;
+    height:45px;
+    background-size:45px 45px;
+    background-color:#fff;
+}
+
+#dn_ctrp_sndcld_title{
+    /* タイトル表示部 */
+    width:150px;
+    height: 45px;
+    line-height: 45px;
+    white-space: nowrap;
+    overflow:hidden;
+    padding-left:5px;
+    background: #b0b3ca;
+    font-weight: bold;
+    border-left: solid 1px #8e8e8e;
+    border-right: solid 1px #8e8e8e;
+    user-select: none;
+}
+.dn_ctrp_sndcld_cls_left #dn_ctrp_sndcld_title,  .dn_ctrp_sndcld_cls_right #dn_ctrp_sndcld_title{
+    /* タイトル部縦書き */
+    writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode:vertical-rl;
+    width:45px;
+    height: 150px;
+    padding: 5px 0;
+}
+
+@media screen and (max-width: 480px) {
+/* スマホにはデカすぎるので、アートワークとタイトルの表示をなくす */
+    .dn_ctrp_sndcld_cls_bottom #dn_ctrp_sndcld_artwork, .dn_ctrp_sndcld_cls_bottom #dn_ctrp_sndcld_title,
+    .dn_ctrp_sndcld_cls_upper #dn_ctrp_sndcld_artwork, .dn_ctrp_sndcld_cls_upper #dn_ctrp_sndcld_title
+    {
+        display:none;
+    }
+    #dn_ctrp_sndcld_CtrPanel.dn_ctrp_sndcld_cls_bottom, #dn_ctrp_sndcld_CtrPanel.dn_ctrp_sndcld_cls_upper {
+        width:160px;
+        left:calc(50vw - 80px);
+    }
+}
