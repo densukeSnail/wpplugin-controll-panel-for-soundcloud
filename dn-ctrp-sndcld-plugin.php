@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Control panel for SoundCloud（SoundCloud再生パネル）
-Plugin URI: https://engineering.dn-voice.info/
+Plugin URI: https://engineering.dn-voice.info/densuke-wp-plugin/ctrl-panel-soundcloud/
 Description: Add SoundCloud control panel on your website
 Version: 1.0
 Author: densuke
@@ -139,16 +139,23 @@ if( !class_exists('dn_ctrp_sndcld_class') ){
 
                     <p>
                         <input type="radio" id="<?php echo self::$option_param["panel_pos"]; ?>_bottom_id" name="<?php echo self::$option_param["panel_pos"]; ?>" value="bottom" <?php if( 'bottom' == get_option(self::$option_param["panel_pos"],"bottom") ) echo "checked"; ?>>
-                        <label for="<?php echo self::$option_param["panel_pos"]; ?>_bottom_id"><?php echo $this->lang['bottom']; ?></label>
-                        <br>
+                        <label for="<?php echo self::$option_param["panel_pos"]; ?>_bottom_id"><?php echo $this->lang['bottom']; ?>
+                        <img class="positionimg" src="<?php echo plugins_url("images/panel_position_bottom.png" , __FILE__); ?>" /></label>
+                    </p>
+                    <p>
                         <input type="radio" id="<?php echo self::$option_param["panel_pos"]; ?>_upper_id" name="<?php echo self::$option_param["panel_pos"]; ?>" value="upper" <?php if( 'upper' == get_option(self::$option_param["panel_pos"],"bottom") ) echo "checked"; ?>>
-                        <label for="<?php echo self::$option_param["panel_pos"]; ?>_upper_id"><?php echo $this->lang['upper']; ?></label>
-                        <br>
+                        <label for="<?php echo self::$option_param["panel_pos"]; ?>_upper_id"><?php echo $this->lang['upper']; ?>
+                        <img class="positionimg" src="<?php echo plugins_url("images/panel_position_upper.png" , __FILE__); ?>" /></label>
+                    </p>
+                    <p>
                         <input type="radio" id="<?php echo self::$option_param["panel_pos"]; ?>_left_id" name="<?php echo self::$option_param["panel_pos"]; ?>" value="left" <?php if( 'left' == get_option(self::$option_param["panel_pos"],"bottom") ) echo "checked"; ?>>
-                        <label for="<?php echo self::$option_param["panel_pos"]; ?>_left_id"><?php echo $this->lang['left']; ?></label>
-                        <br>
+                        <label for="<?php echo self::$option_param["panel_pos"]; ?>_left_id"><?php echo $this->lang['left']; ?>
+                        <img class="positionimg" src="<?php echo plugins_url("images/panel_position_left.png" , __FILE__); ?>" /></label>
+                    </p>
+                    <p>
                         <input type="radio" id="<?php echo self::$option_param["panel_pos"]; ?>_right_id" name="<?php echo self::$option_param["panel_pos"]; ?>" value="right" <?php if( 'right' == get_option(self::$option_param["panel_pos"],"bottom") ) echo "checked"; ?>>
-                        <label for="<?php echo self::$option_param["panel_pos"]; ?>_right_id"><?php echo $this->lang['right']; ?></label>
+                        <label for="<?php echo self::$option_param["panel_pos"]; ?>_right_id"><?php echo $this->lang['right']; ?>
+                        <img class="positionimg" src="<?php echo plugins_url("images/panel_position_right.png" , __FILE__); ?>" /></label>
                     </p>
 
                     <?php submit_button(); ?>
@@ -173,7 +180,7 @@ if( !class_exists('dn_ctrp_sndcld_class') ){
 
             echo <<<EOF
             <div id="dn_ctrp_sndcld_CtrPanel" class="$class">
-                <div id="dn_ctrp_sndcld_playbutton" class="stop" onclick="play_pause();"> </div>
+                <div id="dn_ctrp_sndcld_playbutton" class="stop"> </div>
                 <div id="dn_ctrp_sndcld_artwork"></div>
                 <div id="dn_ctrp_sndcld_title"><span></span></div>
                 <div id="dn_ctrp_sndcld_prevbutton"></div>
