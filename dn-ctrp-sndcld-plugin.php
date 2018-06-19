@@ -30,21 +30,21 @@ if( !class_exists('dn_ctrp_sndcld_class') ){
         // variable for translation data (via *.mo file)
         private $lang;
 
-        private const SETTINGSTYLE_SLUG = 'dn_ctrp_sndcld_setting_style';
-        private const SETTINGSTYLE_PATH = 'styles/dn_ctrp_sndcld_setting_style.css';
-        private const MENU_SLUG = 'dn_ctrp_sndcld_menu';
+        const SETTINGSTYLE_SLUG = 'dn_ctrp_sndcld_setting_style';
+        const SETTINGSTYLE_PATH = 'styles/dn_ctrp_sndcld_setting_style.css';
+        const MENU_SLUG = 'dn_ctrp_sndcld_menu';
 
-        private const WIDGETAPI_SCRIPT_SLUG = 'dn_ctrp_sndcld_widgetapi_script';
-        private const WIDGETAPI_SCRIPT_PATH = 'scripts/dn-ctrp-sndcld-widgetapi-scripts.js';
-        private const CONTROL_SCRIPT_SLUG = 'dn_ctrp_sndcld_control_script';
-        private const CONTROL_SCRIPT_PATH = 'scripts/dn-ctrp-sndcld-control-scripts.js';
-        private const CONTROL_STYLE_SLUG = 'dn_ctrp_sndcld_panel_style';
-        private const CONTROL_STYLE_PATH = 'styles/dn-ctrp-sndcld-control-styles.css';
+        const WIDGETAPI_SCRIPT_SLUG = 'dn_ctrp_sndcld_widgetapi_script';
+        const WIDGETAPI_SCRIPT_PATH = 'scripts/dn-ctrp-sndcld-widgetapi-scripts.js';
+        const CONTROL_SCRIPT_SLUG = 'dn_ctrp_sndcld_control_script';
+        const CONTROL_SCRIPT_PATH = 'scripts/dn-ctrp-sndcld-control-scripts.js';
+        const CONTROL_STYLE_SLUG = 'dn_ctrp_sndcld_panel_style';
+        const CONTROL_STYLE_PATH = 'styles/dn-ctrp-sndcld-control-styles.css';
 
         // 翻訳ファイル名は「LANG_SLUG-国名.mo」となるように注意する( 例：prefix_my_lang-ja.mo )
         // Make sure the translation file name is "LANG_SLUG-country code.mo"( 例：prefix_my_lang-en.mo )
-        private const LANG_SLUG = 'dn_ctrp_sndcld_lang';
-        private const LANG_PATH = '/languages';
+        const LANG_SLUG = 'dn_ctrp_sndcld_lang';
+        const LANG_PATH = '/languages';
 
         private static $option_grp = 'dn_ctrp_sndcld_option_grp';
         private static $option_param = [
