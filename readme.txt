@@ -1,4 +1,4 @@
-=== Control panel for SoundCloudiSoundCloudÄ¶ƒpƒlƒ‹j ===
+=== Control panel for SoundCloudï¼ˆSoundCloudå†ç”Ÿãƒ‘ãƒãƒ«ï¼‰ ===
 Contributors: densuke
 Tags: SoundCloud, player
 Donate link: https://www.amazon.co.jp/hz/wishlist/ls/395GOI706MZLO
